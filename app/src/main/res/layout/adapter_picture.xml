@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:background="@drawable/placeholder"/>
+
+    <TextView
+        android:id="@+id/txtNameUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:textAllCaps="true"
+        android:background="@color/background_footer"
+        android:maxLines="1"
+        android:padding="@dimen/spacing_m"
+        android:textSize="@dimen/textsize_s"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textColor="@android:color/white"
+        android:text="name_user"/>
+
+</FrameLayout>
