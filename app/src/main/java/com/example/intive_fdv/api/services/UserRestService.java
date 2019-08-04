@@ -22,7 +22,7 @@ public class UserRestService extends AbstractRestService<UserRestApi>{
         return UserRestApi.url;
     }
 
-    public static UsersApiCaller getUserApiCaller(Integer results, Integer page, String seed) {
-        return new UsersApiCaller(getInstance().getService(), results, page, seed);
+    public static UsersApiCaller getUserApiCaller(Integer results) {
+        return new UsersApiCaller(getInstance().getService(), results);
     }
 }

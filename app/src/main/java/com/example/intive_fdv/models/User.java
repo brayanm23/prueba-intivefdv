@@ -18,6 +18,10 @@ public class User implements Serializable {
     private Name name;
 
     @Expose
+    @SerializedName("location")
+    private Location location;
+
+    @Expose
     @SerializedName("picture")
     private Picture picture;
 
@@ -40,11 +44,6 @@ public class User implements Serializable {
     @Expose
     @SerializedName("nat")
     private String nat;
-
-    //"location": {},
-    //"login": {},
-    //"dob": {},
-    //"registered": {},
 
     public User() {
     }
@@ -111,5 +110,13 @@ public class User implements Serializable {
 
     public void setNat(String nat) {
         this.nat = nat;
+    }
+
+    public Location getLocation() {
+        return location;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
     }
 }

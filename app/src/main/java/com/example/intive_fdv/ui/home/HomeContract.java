@@ -16,7 +16,7 @@ public interface HomeContract {
 
     interface Presenter extends BaseContract.ServicePresenter{
 
-        void getUserService(Integer results, Integer page, String seed);
+        void getUserService(Integer results);
 
     }
 }

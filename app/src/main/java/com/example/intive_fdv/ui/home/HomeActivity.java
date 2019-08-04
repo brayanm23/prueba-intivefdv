@@ -33,7 +33,7 @@ public class HomeActivity extends AppCompatActivity implements HomeContract.View
         mPresenter = new HomePresenter(this, this);
 
         showProgressDialog(getString(R.string.searching));
-        mPresenter.getUserService(50, null, null);
+        mPresenter.getUserService(50);
 
     }
 

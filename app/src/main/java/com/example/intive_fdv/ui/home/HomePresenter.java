@@ -22,10 +22,10 @@ public class HomePresenter implements HomeContract.Presenter {
 
 
     @Override
-    public void getUserService(Integer results, Integer page, String seed) {
+    public void getUserService(Integer results) {
         setObservableUsers();
 
-        final UsersApiCaller caller = UserRestService.getUserApiCaller(results, page, seed);
+        final UsersApiCaller caller = UserRestService.getUserApiCaller(results);
 
         caller.callApi().subscribeWith(observableUsers);
 

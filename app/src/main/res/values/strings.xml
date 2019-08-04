@@ -3,6 +3,7 @@
     <string name="action_settings">Settings</string>
 
     <string name="details_user">Details User</string>
+    <string name="location">Location:</string>
     <string name="searching">Searching…</string>
     <string name="error_accessing_server">An error occurred while accessing the server</string>
     <string name="error_time_out">The action could not be performed.</string>
@@ -12,7 +13,7 @@
     <string name="phone">Phone:</string>
     <string name="cell">Cell:</string>
     <string name="nat">Nat:</string>
-
+    <string name="title_activity_maps">Map</string>
 
 
 </resources>

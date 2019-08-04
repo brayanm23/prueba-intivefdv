@@ -15,8 +15,6 @@ public interface UserRestApi {
     public static String url = "https://randomuser.me/api/";
 
     @GET("1.2/")
-    Observable<ListUserResponse> getUsers(@Query("results") Integer results,
-                                          @Query("page") Integer page,
-                                          @Query("seed") String seed);
+    Observable<ListUserResponse> getUsers(@Query("results") Integer results);
 
 }
